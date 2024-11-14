@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; 
+  
+}
+
+/* Container for split screen */
+.container {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a subtle 3D effect */
+  border-radius: 12px; /* Rounded corners for the container */
+  overflow: hidden; /* Ensures content doesn't overflow the corners */
+}
+
+/* Right side - Background image or illustration */
+.image-container {
+  width: 50%; /* Right half of the screen */
+  background-image: url('images/logo1.jpeg'); /* Replace with your image path */
+  background-size: cover; /* Cover the container */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Left side - Login form */
+.login-form-container {
+  width: 50%; /* Take the left half of the container */
+  padding: 60px;
+  background-color: #f3eeee; /* White background for form */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Corrected syntax */
+}
+
+
+.login-form-container h1 {
+  font-size: 45px;
+  color: #b45f06;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: #000000;
+}
+
+.login-form-container p {
+  font-size: 18px;
+  font-family: cursive;
+  color: #666666;
+  margin-bottom: 40px;
+  font-weight: bold;}
+
+.login-form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.login-form-container input[type="text"],
+.login-form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-form-container button {
+  width: 100%;
+  padding: 15px;
+  background-color: #4A90E2; /* Blue button */
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-form-container button:hover {
+  background-color: #0e3358; /* Darker blue on hover */
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color:#b45f06; /* Blue link */
+}
+
+.forgot-password:hover {
+  text-decoration: underline; /* Underline on hover */
+}
