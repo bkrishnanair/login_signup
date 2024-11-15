@@ -1,0 +1,178 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for split screen */
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: auto; /* Allow height to adjust based on content */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for a subtle 3D effect */
+  border-radius: 12px; /* Rounded corners for the container */
+  overflow: hidden; /* Ensures content doesn't overflow the corners */
+  background-color: #ffffff; /* White background for the main container */
+}
+
+/* Right side - Background image or illustration */
+.image-container {
+  width: 50%; /* Right half of the screen */
+  background-image: url('images/logo1.jpeg'); /* Replace with your image path */
+  background-size: cover; /* Cover the container */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left side - Form container (Login, Signup, Forgot Password) */
+.login-form-container {
+  width: 50%; /* Take the left half of the container */
+  padding: 60px;
+  background-color: #f3eeee; /* Light grey background for form */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-container h1 {
+    font-size: 45px; /* Larger font size for titles */
+    color: #b45f06;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login-form-container p {
+    font-size: 18px;
+    font-family: cursive;
+    color: #666666;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.login-form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-form-container input[type="text"],
+.login-form-container input[type="password"],
+.login-form-container input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.login-form-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4A90E2; /* Blue button */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.login-form-container button:hover {
+    background-color: #0e3358; /* Darker blue on hover */
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color:#b45f06; /* Brown link color for forgot password and other links */
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Profile Page Styling */
+.profile-container {
+  width: 90%;
+  max-width: 1200px; /* Adjust width with padding consideration */
+  margin: auto; /* Center align with top and bottom margins auto */
+  padding: 40px;
+  background-color: #ffffff; /* White background for profile page */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for a subtle 3D effect */
+  border-radius: 12px; /* Rounded corners for the container */
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 150px; /* Set a specific width for the profile picture */
+  height: 150px; /* Set a specific height for the profile picture */
+  border-radius: 50%; /* Make the profile picture circular */
+  object-fit: cover; /* Ensure the image covers the dimensions */
+  margin-right: 20px; /* Spacing between the image and the content */
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details h2 {
+  font-size: 30px;
+  color: #b45f06;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+/* Additional form styling for consistency */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #4A90E2; /* Blue button */
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out; /* Smooth transition on hover */
+}
+
+form button:hover {
+  background-color: #0e3358; /* Darker blue on hover */
+}
