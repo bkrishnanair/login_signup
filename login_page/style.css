@@ -128,7 +128,7 @@ body {
   width: 150px; /* Set a specific width for the profile picture */
   align-items: center;
   height: 150px; /* Set a specific height for the profile picture */
-  border-radius: 50%; /* Make the profile picture circular */
+  border-radius: 70%; /* Make the profile picture circular */
   object-fit: cover; /* Ensure the image covers the dimensions */
   margin-right: 45px; /* Spacing between the image and the content */
   border: 3px solid #b45f06; /* Add a border around the profile picture */
@@ -143,6 +143,7 @@ body {
 
 .profile-details h2 {
   font-size: 30px;
+  font-weight: bolder;
   color: #b45f06;
   margin-bottom: 10px;
 }
