@@ -102,17 +102,21 @@ body {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Profile Page Styling */
+/* Your existing CSS code */
+/* ... */
+
+/* Enhanced Profile Page CSS */
 .profile-container {
-  width: 90%;
-  max-width: 1200px; /* Adjust width with padding consideration */
-  margin: auto; /* Center align with top and bottom margins auto */
+  width: 100%;
+  max-width: 800px; /* Adjust width with padding consideration */
+  margin: 20px auto; /* Center align with margins */
   padding: 40px;
   background-color: #ffffff; /* White background for profile page */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for a subtle 3D effect */
   border-radius: 12px; /* Rounded corners for the container */
 }
 
+/* Profile Header with Picture and Details */
 .profile-header {
   display: flex;
   align-items: center;
@@ -122,15 +126,19 @@ body {
 
 .profile-picture {
   width: 150px; /* Set a specific width for the profile picture */
+  align-items: center;
   height: 150px; /* Set a specific height for the profile picture */
   border-radius: 50%; /* Make the profile picture circular */
   object-fit: cover; /* Ensure the image covers the dimensions */
-  margin-right: 20px; /* Spacing between the image and the content */
+  margin-right: 45px; /* Spacing between the image and the content */
+  border: 3px solid #b45f06; /* Add a border around the profile picture */
+  
 }
 
 .profile-details {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .profile-details h2 {
@@ -145,34 +153,33 @@ body {
   margin-bottom: 10px;
 }
 
-/* Additional form styling for consistency */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form input[type="text"],
-form input[type="password"],
-form input[type="email"] {
-  width: 100%;
-  padding: 15px;
+.profile-details .pronunciation,
+.profile-details .contact,
+.profile-details .biography,
+.profile-details .links {
   margin-bottom: 20px;
-  border-radius: 8px; /* Rounded corners */
-  border: 1px solid #ccc;
-  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-form button {
-  width: 100%;
-  padding: 15px;
-  background-color: #4A90E2; /* Blue button */
+/* Section Headers */
+.profile-details .section-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b45f06;
+  margin-bottom: 10px;
+}
+
+/* Edit Profile Button */
+.edit-profile-button {
+  padding: 10px 20px;
+  background-color: #4A90E2;
   color: white;
-  border-radius: 8px; /* Rounded corners */
   border: none;
+  border-radius: 8px; /* Rounded corners */
   cursor: pointer;
+  align-self: flex-start; /* Align button to the start */
   transition: background-color .3s ease-in-out; /* Smooth transition on hover */
 }
 
-form button:hover {
+.edit-profile-button:hover {
   background-color: #0e3358; /* Darker blue on hover */
 }
