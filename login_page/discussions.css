@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+/* Container for the page */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  color: #b45f06;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.controls button:hover {
+  background-color: #0e3358;
+}
+
+/* Filter and search bar styling */
+.filter-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-search select,
+.filter-search input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Discussions container styling */
+.discussions {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual discussion styling */
+.discussion {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.discussion:hover {
+  background-color: #f9f9f9;
+}
+
+.discussion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.discussion-title a {
+  font-size: 18px;
+  color: #4A90E2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.discussion-title a:hover {
+  text-decoration: underline;
+}
+
+.discussion-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.discussion-meta span {
+  margin-right: 15px;
+}

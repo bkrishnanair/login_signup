@@ -1,0 +1,115 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+/* Discussion Page Container */
+.discussion-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #ffffff; /* White background for the container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for a subtle effect */
+  border-radius: 12px; /* Rounded corners */
+}
+
+/* Header Section */
+.discussion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.discussion-header h1 {
+    font-size: 32px;
+    color: #b45f06; /* Same color as used in other pages */
+}
+
+.discussion-controls {
+    display: flex;
+    align-items: center;
+}
+
+.discussion-controls select,
+.search-bar {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f3eeee; /* Light grey background */
+}
+
+.add-discussion-btn {
+    padding: 10px 20px;
+    background-color: #4A90E2; /* Blue button */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+}
+
+.add-discussion-btn:hover {
+    background-color: #0e3358; /* Darker blue on hover */
+}
+
+/* Discussion List Styling */
+.discussion-list {
+    padding: 20px;
+}
+
+.discussion-item {
+    padding: 20px;
+    border-bottom: solid 1px #ccc; /* Separator between discussions */
+}
+
+.discussion-item:last-child {
+    border-bottom: none; /* Remove bottom border for last item */
+}
+
+.discussion-title {
+    font-size: 18px;
+    color: #4A90E2; /* Link color matching buttons */
+    text-decoration: none;
+}
+
+.discussion-title:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.discussion-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.discussion-count,
+.discussion-replies,
+.discussion-due {
+    font-size: 14px;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width:768px) {
+   .discussion-header {
+       flex-direction: column; /* Stack header elements vertically on small screens */
+       align-items:flex-start ;
+   }
+
+   .discussion-controls {
+       margin-top :10px ;
+       width :100% ;
+       display :block ;
+   }
+
+   .search-bar,
+   .add-discussion-btn,
+   select{
+       width :100% ;
+       margin-bottom :10 px ;
+   }
+
+}
